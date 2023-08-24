@@ -2,26 +2,37 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+
+
+@font-face {
+  font-family: 'Inter';
+  src: url('/path-to-font/Inter-Regular.ttf') format('truetype');
+  /* Additional font styles (e.g., font-weight, font-style) */
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+.clip-polygon {
+  clip-path:  polygon(0 0,100% 0,77% 100%,0% 100%);
+  background-color: #138999; /* You can set your desired background color */
+}
+
+.hide{
+  display:none;
+
+}
+
+@media (min-width:1440px) {
+  .hide{
+    display:flex;
   }
-}
+  }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
+  .show{
+    display:flex;
+  }
+  
+  @media (min-width:1440px) {
+    .show{
+      display: none;
+    }
+    
+  }
