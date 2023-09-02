@@ -8,7 +8,7 @@ import Facebook from '../assests/icons/Facebook';
 import Twitter from '../assests/icons/Twitter';
 import Vimeo from '../assests/icons/Vimeo';
 import Pinterest from '../assests/icons/Pinterest';
-import CustomDropdown from '../assests/utils/CustomDropdown';
+import CustomDropdown from './utils/CustomDropdown';
 import Search from '../assests/icons/Search';
 import RightArrow from '../assests/icons/RightArrow';
 import Dots from '../assests/icons/Dots';
@@ -91,7 +91,7 @@ const Header = () => {
 
   return (
     
-    <header className='bg-white flex w-full shadow-lg sticky top-0  z-50 space-x-10 h-20 lg:h-full   '>
+    <header className='bg-white  flex w-full shadow-lg sticky top-0  z-50 space-x-10 h-20 lg:h-full   '>
           <Sidebar isOpen={isSidebarOpen} onClose={toggleSidebar} />
 
             {/* logo  */}
