@@ -4,6 +4,9 @@ import Service from './components/sections/Service'
 import About from './components/sections/About'
 import BestService from './components/sections/BestService'
 import Donation from './components/sections/Donation'
+import Causesgoals from './components/sections/Causesgoals'
+import Reviews from './components/sections/Reviews'
+import Projects from './components/sections/Projects'
 
 
 export default function Home() {
@@ -15,6 +18,9 @@ export default function Home() {
       <About />
       <BestService />
       <Donation />
+      <Causesgoals />
+      <Reviews />
+      <Projects />
      
     </main>
   )

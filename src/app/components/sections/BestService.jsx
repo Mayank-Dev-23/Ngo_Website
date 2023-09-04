@@ -22,6 +22,11 @@ const BestService = () => {
           <Image src="/abh1.png" fill />
         </div>
       </div>
+      <div className="absolute top-20 right-10">
+       <div className="h-44 w-44 animate-pulse relative">
+       <Image src= "/light.png" fill />
+       </div>
+      </div>
 
       <div className="absolute bottom-0 right-0 z-20">
         <div className="h-48 w-48 relative">
@@ -105,7 +110,7 @@ const BestService = () => {
     
      </div>
      <div className="h-14 w-14  absolute top-2  bg-[#853fe8] rounded-full flex items-center justify-center">
-             <People height={40} width={40} />
+             <People height={40} width={40} color="#FFFFFF"/>
          </div>
 
      </div>
@@ -129,7 +134,7 @@ const BestService = () => {
     
      </div>
      <div className="h-14 w-14  absolute top-2   bg-[#ffad0e] rounded-full flex items-center justify-center">
-             <People height={40} width={40} />
+             <People height={40} width={40} color="#FFFFFF" />
          </div>
 
      </div>
@@ -153,7 +158,7 @@ const BestService = () => {
     
      </div>
      <div className="h-14 w-14  absolute top-2   bg-[#36c691] rounded-full flex items-center justify-center">
-             <People height={40} width={40} />
+             <People height={40} width={40}  color="#FFFFFF"/>
          </div>
 
      </div>
@@ -177,7 +182,7 @@ const BestService = () => {
     
      </div>
      <div className="h-14 w-14  absolute top-2   bg-[#2e9ecd] rounded-full flex items-center justify-center">
-             <People height={40} width={40} />
+             <People height={40} width={40} color="#FFFFFF" />
          </div>
 
      </div>
