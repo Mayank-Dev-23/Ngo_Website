@@ -43,6 +43,7 @@ const HomePage = () => {
 
  
   return (
+    <div>
     <Swiper
     slidesPerView={1}
   allowTouchMove={true}
@@ -57,16 +58,17 @@ const HomePage = () => {
     {bannerImage.map((image,i)=>{
       // console.log(image);
       return (
-        <>
+        <div className='relative'>
         <SwiperSlide key={i} >
           <Slide image={image} />
         </SwiperSlide>
         
         
-        </>
+        </div>
       )
     })}
   </Swiper>
+  </div>
   )
 }
 

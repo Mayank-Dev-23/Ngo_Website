@@ -3,7 +3,7 @@ import React from "react";
 
 const Reviews = () => {
   return (
-    <div className="mt-20 relaitve p-4">
+    <div className="mt-20 relaitve p-4 ">
       <div className="h-[50rem] md:h-[30rem] w-full relative max-w-6xl mx-auto">
         <Image
           src="/reviews_banner.png"

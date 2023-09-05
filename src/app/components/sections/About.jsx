@@ -11,7 +11,7 @@ import React, { useState } from "react";
 const About = () => {
   const [change, setChange] = useState(false);
   return (
-    <div className="relative  overflow-hidden lg:mt-10">
+    <div className="relative  overflow-hidden lg:mt-10 z-20">
       <div className="absolute -bottom-20 z-50  md:-right-[20rem] lg:-right-[10rem]  hide ">
          <div className="h-[400px] w-[500px] relative">
             <Image  src="/splash.png" fill  />

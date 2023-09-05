@@ -7,11 +7,13 @@ import Donation from './components/sections/Donation'
 import Causesgoals from './components/sections/Causesgoals'
 import Reviews from './components/sections/Reviews'
 import Projects from './components/sections/Projects'
+import ContactUs from './components/sections/ContactUs'
+
 
 
 export default function Home() {
   return (
-    <main className='h-screen w-full '>
+    <main className='h-auto w-full relative  '>
 
       <HomePage /> 
       <Service/>
@@ -21,6 +23,8 @@ export default function Home() {
       <Causesgoals />
       <Reviews />
       <Projects />
+      <ContactUs />
+      
      
     </main>
   )

@@ -18,7 +18,7 @@ import Hamburger from '../assests/icons/Hamburger';
 
 const categories = [
     {
-      name: 'Home',
+      name: 'Home',Link:'/',
       sublinks: [
         
       ],
@@ -26,36 +26,36 @@ const categories = [
     {
       name: 'Pages',
       sublinks: [
-        { name: 'Sublink 21', url: '/sublink21' },
-        { name: 'Sublink 22', url: '/sublink22' },
+        { name: 'About', Link:'/about'  },
+        { name: 'Sublink 22', Link: '/sublink22' },
       ],
     },
     {
       name: 'Causes',
       sublinks: [
-        { name: 'Sublink 21', url: '/sublink21' },
-        { name: 'Sublink 22', url: '/sublink22' },
+        { name: 'Sublink 21', Link: '/sublink21' },
+        { name: 'Sublink 22', Link: '/sublink22' },
       ],
     },
     {
         name: 'Services',
         sublinks: [
-            { name: 'Sublink 21', url: '/sublink21' },
-            { name: 'Sublink 22', url: '/sublink22' },
+            { name: 'Sublink 21', Link: '/sublink21' },
+            { name: 'Sublink 22', Link: '/sublink22' },
           ],
       },
       {
         name: 'Projects',
         sublinks: [
-            { name: 'Sublink 21', url: '/sublink21' },
-            { name: 'Sublink 22', url: '/sublink22' },
+            { name: 'Sublink 21', Link: '/sublink21' },
+            { name: 'Sublink 22', Link: '/sublink22' },
           ],
       },
       {
         name: 'Blog',
         sublinks: [
-            { name: 'Sublink 21', url: '/sublink21' },
-            { name: 'Sublink 22', url: '/sublink22' },
+            { name: 'Sublink 21', Link: '/sublink21' },
+            { name: 'Sublink 22', Link: '/sublink22' },
           ],
       },
       

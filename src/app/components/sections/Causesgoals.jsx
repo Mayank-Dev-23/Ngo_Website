@@ -29,7 +29,7 @@ const Causesgoals = () => {
 
     const [change,setChange] =useState(false);
   return (
-    <div className="w-full mt-20 ">
+    <div className="w-full mt-20 relative  ">
       <div className="flex flex-col items-center w-full">
         <div className="flex items-center space-x-2">
           <div className="flex flex-col space-y-1">
@@ -47,13 +47,13 @@ const Causesgoals = () => {
 
       {/* slider  */}
 
-      <div className="mt-10 max-w-6xl mx-auto p-4 ">
+      <div className="mt-10 max-w-6xl mx-auto p-4  relative">
         <Swiper {...swiperParams}>
           {colors
             .map((color,i) => {
               return (
                 <SwiperSlide key={i}>
-                  <div className="group h-auto">
+                  <div className="group  h-auto">
                     <div className="h-auto w-full grid grid-rows-1  transition-all ease-in duration-500 border ">
                       <div className="row-span-1 group-hover:bg-[#2a6b75] border border-gray-300   group-hover:border-[#2a6b75] bg-white flex flex-col p-2 transition-all duration-300 ease-in">
                         <div className="h-64 w-full relative">

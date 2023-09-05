@@ -25,7 +25,7 @@ const Projects = () => {
         },
       };
   return (
-    <div className="mt-20">
+    <div className="mt-20 relative h-auto mb-[27rem] lg:mb-[18rem]">
       <div className="h-[25rem] w-full relative">
         <Image src="/projects.jpg" fill alt="projects_banner"  />
         <div className="absolute   inset-0">
@@ -45,7 +45,7 @@ const Projects = () => {
             <p className="max-w-[500px] text-white text-lg">Services address a range of simply application and infrastructure of passages of available, but the majority have suffered alteration in some form.</p>
           </div>
 
-          <div className="h-96 w-full ">
+          <div className="h-96 w-full  ">
             <Swiper {...swiperParams}>
                 {Array(14).fill().map((i)=>{
                     return (

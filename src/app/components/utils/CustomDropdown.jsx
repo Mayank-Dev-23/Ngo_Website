@@ -2,6 +2,7 @@
 // components/CustomDropdown.js
 import React, { useState } from 'react';
 import { Transition } from '@headlessui/react';
+import Link from 'next/link';
 
 const categories = [
   {
@@ -105,16 +106,19 @@ const CustomDropdown = ({ triggerId, category }) => {
         <div className="rounded-md bg-white shadow-xs z-50">
           <div className="py-1" role="menu" aria-orientation="vertical" aria-labelledby={triggerId}>
             {category.sublinks &&
-              category.sublinks.map((sublink, index) => (
-                <a
+              category.sublinks.map((sublink, index)=>{
+                console.log(sublink);
+                return(
+                  <Link
                   key={index}
-                  href={sublink.url}
+                  href={sublink.Link}
                   className="block px-4 py-2 text-sm w-full text-left hover:bg-gray-100"
                   role="menuitem"
                 >
                   {sublink.name}
-                </a>
-              ))}
+                </Link>
+                )
+              })}
           </div>
         </div>
       </Transition>
