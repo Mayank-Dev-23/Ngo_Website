@@ -51,8 +51,8 @@ const Footer = () => {
 
         <div className='grid absolute md:grid-cols-2 p-10 lg:grid-cols-4  gap-3  inset-0 max-w-7xl mx-auto'>
             <div className='flex flex-col space-y-5 '>
-                <div className='h-12 w-44 relative'>
-                    <Image src="/logo2.png" fill alt="logo"/>
+                <div className='h-16 w-20 relative'>
+                    <Image src="/sikarialogo.png" fill alt="logo"/>
                 </div>
                 <p className='text-white'>Nemo enim ipsam voluptate quia voluptas sit aspernatur aut odit aut fugit, sed quia magni this dolores eos qui ratione .</p>
                 <div className='flex items-center space-x-2'>

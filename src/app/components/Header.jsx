@@ -168,8 +168,8 @@ const Header = () => {
 
             {/* mob  */}
             <div className='flex items-center justify-between show w-full px-4'>
-              <div className="h-28 w-32 relative -ml-10">
-                <Image src="/logo.png" fill objectFit='contain' alt="sikaria foundation" />
+              <div className="h-16 w-32 relative -ml-10">
+                <Image src="/sikarialogo.png" fill objectFit='contain' alt="sikaria foundation" />
               </div>
               <div className='cursor-pointer'>
               <Hamburger  height={40} width={40}  />
