@@ -47,7 +47,7 @@ const Service = () => {
           <div className="grid h-full  sm:grid-grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3  gap-6  absolute inset-0 lg:p-10 w-full ">
             {serviceDesc.map((item, i) => {
               return (
-                <div className="w-full mt-6">
+                <div key={i} className="w-full mt-6">
                   <div
                     key={i}
                     className={` ${item.bg} relative flex group sm:flex-row overflow-hidden sm:items-center gap-5 p-4 lg:p-10 flex-col rounded-md md:rounded-full  w-full`}

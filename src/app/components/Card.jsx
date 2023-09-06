@@ -7,7 +7,7 @@ const Card = ({color}) => {
   return (
     <div className={`bg-white group  flex flex-col p-3 m-3 rounded-[90px]`}>
     <div className="h-56 w-full relative ">
-    <Image src="/child.jpg" fill objectFit="cover" className="rounded-bl-[90px] rounded-tl-[90px] rounded-tr-[90px] bg-white p-1"  />
+    <Image src="/child.jpg" fill objectFit="cover" alt="child" className="rounded-bl-[90px] rounded-tl-[90px] rounded-tr-[90px] bg-white p-1"  />
     </div>
     <h1 className="text-2xl font-semibold text-[#144047]">Quick fundraising</h1>
     <div className="flex items-center space-x-3">

@@ -21,7 +21,7 @@ const Footer = () => {
         <div className='mt-[27rem] md:mt-40 '>
         <div className='h-48 w-full relative overflow-hidden'>
            
-            <Image  src="/subscribe.jpg" fill />
+            <Image  src="/subscribe.jpg" fill alt="banner" />
             <div className=' absolute inset-0 grid md:grid-cols-4 w-full'>
                 <div className='col-span-1 hide bg-white rounded-r-full flex justify-end p-3 items-center'>
                     <div className='border-4  border-purple-500 bg-white grid place-content-center h-36 w-36 md:h-44 md:w-44 rounded-full p-2 border-dashed'>
@@ -38,7 +38,7 @@ const Footer = () => {
                         </div>
                     </div>
                 <div className='h-32 w-32 absolute right-0 top-5 hide'>
-                <Image src="/heart.png" fill className='absolute right-0 ' />
+                <Image src="/heart.png" fill className='absolute right-0 ' alt="heart" />
                 </div>
 
                 </div>
@@ -47,18 +47,18 @@ const Footer = () => {
     </div>
         {/* --------- */}
     <div className=' relative h-[80rem] md:h-96 w-full '>
-        <Image src="/footer.jpg" fill objectFit='cover' />
+        <Image src="/footer.jpg" fill objectFit='cover' alt="footerbanner" />
 
         <div className='grid absolute md:grid-cols-2 p-10 lg:grid-cols-4  gap-3  inset-0 max-w-7xl mx-auto'>
             <div className='flex flex-col space-y-5 '>
                 <div className='h-12 w-44 relative'>
-                    <Image src="/logo2.png" fill/>
+                    <Image src="/logo2.png" fill alt="logo"/>
                 </div>
                 <p className='text-white'>Nemo enim ipsam voluptate quia voluptas sit aspernatur aut odit aut fugit, sed quia magni this dolores eos qui ratione .</p>
                 <div className='flex items-center space-x-2'>
                     {social.map((data,i)=>{
                         return(
-                            <div className='p-2 bg-transparent border border-[#aaa] rounded-full'>{data.icon}</div>
+                            <div key={i} className='p-2 bg-transparent border border-[#aaa] rounded-full'>{data.icon}</div>
                         )
                     })}
 
@@ -80,8 +80,8 @@ const Footer = () => {
                 <div className='mt-8 grid grid-cols-3 gap-3'>
                     {Array(6).fill().map((i)=>{
                         return(
-                            <div className='h-20 w-20 relative rounded-lg overflow-hidden group'>
-                                <Image src="/child.jpg" fill className='rounded-lg' />
+                            <div key={i} className='h-20 w-20 relative rounded-lg overflow-hidden group'>
+                                <Image src="/child.jpg" fill className='rounded-lg' alt="child" />
                               
                                 <div className='bg-black opacity-60 grid place-content-center absolute inset-0 rounded-lg -translate-y-[100%] group-hover:translate-y-[0%] transition-all duration-150 ease-in'>
                                   <div className='p-3 bg-seconday rounded-full cursor-pointer opacity-100'>

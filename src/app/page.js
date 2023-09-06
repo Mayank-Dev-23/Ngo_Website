@@ -1,3 +1,6 @@
+
+
+
 import Image from 'next/image'
 import HomePage from './components/HomePage'
 import Service from './components/sections/Service'
@@ -11,9 +14,12 @@ import ContactUs from './components/sections/ContactUs'
 
 
 
+
 export default function Home() {
+  
   return (
     <main className='h-auto w-full relative  '>
+      
 
       <HomePage /> 
       <Service/>

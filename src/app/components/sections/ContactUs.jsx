@@ -37,12 +37,13 @@ const ContactUs = () => {
   return (
     <div className="relative">
       <div className="h-[104rem] lg:h-[75rem] xl:h-[60rem]  w-full relative ">
-        <Image src="/contact.jpg" fill content="center" objectFit="cover" />
+        <Image src="/contact.jpg"  alt="contact" fill content="center" objectFit="cover" />
         <div className="grid    gap-10 lg:grid-cols-2 xl:grid-cols-3 absolute inset-0 p-5 h-[40rem] ">
           <div className="relative   h-[25rem] lg:h-auto  bg-white rounded-lg">
             <Image
               src="/child.jpg"
               fill
+              alt="child"
               objectPosition="center"
               objectFit="cover"
               className="p-2 rounded-lg"
@@ -61,6 +62,7 @@ const ContactUs = () => {
           {contact.map((data, i) => {
             return (
               <div
+              key={i}
                 className="bg-white border-[1.6px] flex items-center p-5   space-x-5 rounded-md border-dashed"
                 style={{ borderColor: data.color }}
               >

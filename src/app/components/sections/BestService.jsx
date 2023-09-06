@@ -19,12 +19,12 @@ const BestService = () => {
     <div className="mt-20 p-10 bg-[#f1f7f7] h-auto w-full relative">
       <div className="absolute top-10 ">
         <div className="h-20 w-20 md:h-56 md:w-56 relative">
-          <Image src="/abh1.png" fill />
+          <Image src="/abh1.png" fill alt="banner" />
         </div>
       </div>
       <div className="absolute top-20 right-10">
        <div className="h-44 w-44 animate-pulse relative">
-       <Image src= "/light.png" fill />
+       <Image src= "/light.png" fill alt="light" />
        </div>
       </div>
 
@@ -49,7 +49,7 @@ const BestService = () => {
       <div className="grid sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 max-w-7xl mx-auto">
       <div className={`bg-white transition-all duration-500 ease-in-out hover:bg-[#df5311] group  flex flex-col p-3 m-3 rounded-[90px]`}>
     <div className="h-56 w-full relative ">
-    <Image src="/child.jpg" fill objectFit="cover" className="rounded-bl-[90px]  rounded-tl-[90px] rounded-tr-[90px] bg-white p-1"  />
+    <Image src="/child.jpg" fill objectFit="cover" alt="child" className="rounded-bl-[90px]  rounded-tl-[90px] rounded-tr-[90px] bg-white p-1"  />
     </div>
     <div className="flex flex-col space-y-4 px-5">
     <h1 className="text-2xl font-semibold text-[#138999] group-hover:text-white ">Quick fundraising</h1>
@@ -73,7 +73,7 @@ const BestService = () => {
 
  <div className={`bg-white group hover:bg-[#138999]  transition-all duration-500 ease-in-out flex flex-col p-3 m-3 rounded-[90px]`}>
     <div className="h-56 w-full relative ">
-    <Image src="/child.jpg" fill objectFit="cover" className="rounded-bl-[90px] rounded-tl-[90px] rounded-tr-[90px] bg-white p-1"  />
+    <Image src="/child.jpg" alt="child" fill objectFit="cover" className="rounded-bl-[90px] rounded-tl-[90px] rounded-tr-[90px] bg-white p-1"  />
     </div>
     <div className="flex flex-col space-y-4 px-5">
     <h1 className="text-2xl font-semibold text-[#138999] group-hover:text-white ">Quick fundraising</h1>
@@ -98,7 +98,7 @@ const BestService = () => {
 
  <div className={`bg-white group hover:bg-[#853fe8] transition-all duration-500 ease-in-out  flex flex-col p-3 m-3 rounded-[90px]`}>
     <div className="h-56 w-full relative ">
-    <Image src="/child.jpg" fill objectFit="cover" className="rounded-bl-[90px] rounded-tl-[90px] rounded-tr-[90px] bg-white p-1"  />
+    <Image src="/child.jpg" alt="child" fill objectFit="cover" className="rounded-bl-[90px] rounded-tl-[90px] rounded-tr-[90px] bg-white p-1"  />
     </div>
    <div className="flex flex-col space-y-4 px-5">
    <h1 className="text-2xl font-semibold text-[#138999] group-hover:text-white">Quick fundraising</h1>
@@ -122,7 +122,7 @@ const BestService = () => {
 
  <div className={`bg-white group  transition-all duration-500 ease-in-out hover:bg-[#ffad0e] flex flex-col p-3 m-3 rounded-[90px]`}>
     <div className="h-56 w-full relative ">
-    <Image src="/child.jpg" fill objectFit="cover" className="rounded-bl-[90px] rounded-tl-[90px] rounded-tr-[90px] bg-white p-1"  />
+    <Image src="/child.jpg" alt="child" fill objectFit="cover" className="rounded-bl-[90px] rounded-tl-[90px] rounded-tr-[90px] bg-white p-1"  />
     </div>
     <div className="flex flex-col space-y-4 px-5">
     <h1 className="text-2xl font-semibold text-[#138999] group-hover:text-white">Quick fundraising</h1>
@@ -146,7 +146,7 @@ const BestService = () => {
 
  <div className={`bg-white group  hover:bg-[#36c691]  transition-all duration-500 ease-in-out flex flex-col p-3 m-3 rounded-[90px]`}>
     <div className="h-56 w-full relative ">
-    <Image src="/child.jpg" fill objectFit="cover" className="rounded-bl-[90px] rounded-tl-[90px] rounded-tr-[90px] bg-white p-1"  />
+    <Image src="/child.jpg" alt="child" fill objectFit="cover" className="rounded-bl-[90px] rounded-tl-[90px] rounded-tr-[90px] bg-white p-1"  />
     </div>
     <div className="flex flex-col space-y-4 px-5">
     <h1 className="text-2xl font-semibold text-[#138999] group-hover:text-white">Quick fundraising</h1>
@@ -170,7 +170,7 @@ const BestService = () => {
 
  <div className={`bg-white group transition-all z-30 duration-500 ease-in-out  hover:bg-[#2e9ecd] flex flex-col p-3 m-3 rounded-[90px]`}>
     <div className="h-56 w-full relative ">
-    <Image src="/child.jpg" fill objectFit="cover" className="rounded-bl-[90px] rounded-tl-[90px] rounded-tr-[90px] bg-white p-1"  />
+    <Image src="/child.jpg" alt="child" fill objectFit="cover" className="rounded-bl-[90px] rounded-tl-[90px] rounded-tr-[90px] bg-white p-1"  />
     </div>
     <div className="flex flex-col px-8 space-y-5">
     <h1 className="text-2xl font-semibold text-[#138999] group-hover:text-white ">Quick fundraising</h1>

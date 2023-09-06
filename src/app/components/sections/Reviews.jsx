@@ -8,13 +8,14 @@ const Reviews = () => {
         <Image
           src="/reviews_banner.png"
           fill
+          alt="reviewbanner"
           className="rounded-[5rem]"
           objectFit="cover"
         />
         <div className="absolute  inset-0 rounded-[5rem] grid md:grid-cols-2 gap-6 ">
           <div className=" grid place-content-center">
             <div className="relative h-96 w-96 bg-white rounded-full ">
-              <Image src="/child.jpg" fill className="rounded-full p-2" objectFit="cover" />
+              <Image src="/child.jpg" alt="child" fill className="rounded-full p-2" objectFit="cover" />
             </div>
           </div>
 

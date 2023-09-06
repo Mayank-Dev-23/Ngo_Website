@@ -58,7 +58,7 @@ const HomePage = () => {
     {bannerImage.map((image,i)=>{
       // console.log(image);
       return (
-        <div className='relative'>
+        <div key={i} className='relative'>
         <SwiperSlide key={i} >
           <Slide image={image} />
         </SwiperSlide>

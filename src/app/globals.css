@@ -12,7 +12,7 @@
 
 .clip-polygon {
   clip-path:  polygon(0 0,100% 0,77% 100%,0% 100%);
-  background-color: #138999; /* You can set your desired background color */
+  background-color: #FFFFFF; /* You can set your desired background color */
 }
 
 .hide{

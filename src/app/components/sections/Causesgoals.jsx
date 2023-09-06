@@ -57,7 +57,7 @@ const Causesgoals = () => {
                     <div className="h-auto w-full grid grid-rows-1  transition-all ease-in duration-500 border ">
                       <div className="row-span-1 group-hover:bg-[#2a6b75] border border-gray-300   group-hover:border-[#2a6b75] bg-white flex flex-col p-2 transition-all duration-300 ease-in">
                         <div className="h-64 w-full relative">
-                          <Image src="/gools.jpg" fill objectFit="cover" />
+                          <Image src="/gools.jpg" fill objectFit="cover" alt="gools" />
                           <div
                           onMouseEnter={()=>setChange(true)}
                           onMouseLeave={()=>setChange(false)}

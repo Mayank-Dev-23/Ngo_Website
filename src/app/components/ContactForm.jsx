@@ -9,11 +9,11 @@ const ContactForm = () => {
         <p className='text-gray-500 text-lg'>24/7 support</p>
        </div>
         <div className='flex flex-col w-full space-y-8 mt-4 px-5'>
-            <input type='text' placeholder='Your Name*' className='p-5 outline-none border rounded-md border-gray-400' />
-            <input type='text' placeholder='Phone Number*' className='p-5 outline-none border rounded-md border-gray-400' />
-            <input type='text' placeholder='Subjects Date*' className='p-5 outline-none border rounded-md border-gray-400' />
-            <input type='text' placeholder='Email Address*' className='p-5 outline-none border rounded-md border-gray-400' />
-            <input type='text' placeholder='Sex*' className='p-5 outline-none border rounded-md border-gray-400' />
+            <input type='text' placeholder='Your Name*' className='p-4 focus:ring-1 ring-seconday outline-none border rounded-md border-gray-400' />
+            <input type='text' placeholder='Phone Number*' className='p-4  focus:ring-1 ring-seconday outline-none border rounded-md border-gray-400' />
+            <input type='text' placeholder='Subjects Date*' className='p-4 focus:ring-1 ring-seconday outline-none border rounded-md border-gray-400' />
+            <input type='text' placeholder='Email Address*' className='p-4 focus:ring-1 ring-seconday outline-none border rounded-md border-gray-400' />
+            <input type='text' placeholder='Sex*' className='p-4 focus:ring-1 ring-seconday outline-none border rounded-md border-gray-400' />
         </div>
         <button className='flex items-center space-x-2 mt-10 transition-all ease-in duration-300 hover:scale-105  hover:bg-[#144047]  justify-center bg-seconday w-full p-4 rounded-full'>
             <p className='text-white uppercase font-semibold'>send request</p>

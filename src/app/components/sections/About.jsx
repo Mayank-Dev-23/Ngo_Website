@@ -14,7 +14,7 @@ const About = () => {
     <div className="relative  overflow-hidden lg:mt-10 z-20">
       <div className="absolute -bottom-20 z-50  md:-right-[20rem] lg:-right-[10rem]  hide ">
          <div className="h-[400px] w-[500px] relative">
-            <Image  src="/splash.png" fill  />
+            <Image  src="/splash.png" fill  alt="splash" />
           </div>
          </div>
     <div className="mt-10 relaitve p-4">
@@ -25,7 +25,7 @@ const About = () => {
         <div className="lg:col-span-1 relative ">
          <div className="h-full w-full relaitve ">
          <div className="h-[43rem] w-48 relative hide">
-            <Image  src="/image_holder.jpg" fill/>
+            <Image  src="/image_holder.jpg" fill alt="holder"/>
           </div>
           <div className="relative lg:absolute lg:top-8 lg:left-10 bg-white w-full ">
           <div className="absolute -bottom-10 z-50 translate-y-[8%] right-10">
@@ -40,7 +40,7 @@ const About = () => {
         </div>
        </div>
           <div className="h-[22rem] sm:h-[40rem] md:h-[45rem] lg:h-[39rem] md:w-full  relative">
-            <Image  src="/child.jpg" fill className="p-2"/>
+            <Image  src="/child.jpg" fill className="p-2" alt="child"/>
           </div>
           </div>
            
@@ -77,7 +77,7 @@ const About = () => {
           <div className="flex items-start flex-col md:flex-row space-y-3 space-x-5 bg-[#F1F6F7] max-w-[500px] overflow-hidden relative p-3">
             <div className="bg-[#8139E7] rounded-full h-10 w-10 absolute -bottom-5 right-10"></div>
             <div className="h-24 w-24 relative border border-gray-300 p-2">
-              <Image src="/child.jpg" fill className="p-1" />
+              <Image src="/child.jpg" fill className="p-1" alt="child" />
             </div>
             <div className="flex space-x-3">
               <Chat height={30} width={30} color="#138999" />

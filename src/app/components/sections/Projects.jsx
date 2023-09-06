@@ -51,7 +51,7 @@ const Projects = () => {
                     return (
                        <SwiperSlide key={i} >
                         <div className="h-[25rem] w-full relative group overflow-hidden ">
-                            <Image src="/projectspic.jpg" fill objectFit="cover" />
+                            <Image src="/projectspic.jpg" alt="project" fill objectFit="cover" />
                             <div className=" inset-0 absolute p-3  translate-x-56 translate-y-14 group-hover:translate-y-0 transition-transform group-hover:translate-x-0 duration-300 ease-in-out opacity-0 group-hover:opacity-100  ">
                                 <div className="bg-[#1b808c] h-full w-full p-4  opacity-90">
                                     <div className="h-full w-full bg-transparent border-4 grid place-content-center  border-white ">
