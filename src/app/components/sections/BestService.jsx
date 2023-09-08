@@ -52,7 +52,7 @@ const BestService = () => {
     <Image src="/child.jpg" fill objectFit="cover" alt="child" className="rounded-bl-[90px]  rounded-tl-[90px] rounded-tr-[90px] bg-white p-1"  />
     </div>
     <div className="flex flex-col space-y-4 px-5">
-    <h1 className="text-2xl font-semibold text-[#138999] group-hover:text-white ">Quick fundraising</h1>
+    <h1 className=" text-lg md:text-2xl font-semibold text-[#138999] group-hover:text-white ">Quick fundraising</h1>
     <div className="flex items-center space-x-3">
     
      <div className="bg-transparent rounded-full flex items-center justify-center p-1 relative group-hover:bg-white ">
@@ -65,7 +65,7 @@ const BestService = () => {
          </div>
 
      </div>
-     <p className="group-hover:text-white font-[900px] ">We poor standard chunk of Denounce righteous</p>
+     <p className="group-hover:text-white font-[900px] text-sm md:text-md line-clamp-2 ">We poor standard chunk of Denounce righteous</p>
     </div>
     </div>
 
@@ -76,7 +76,7 @@ const BestService = () => {
     <Image src="/child.jpg" alt="child" fill objectFit="cover" className="rounded-bl-[90px] rounded-tl-[90px] rounded-tr-[90px] bg-white p-1"  />
     </div>
     <div className="flex flex-col space-y-4 px-5">
-    <h1 className="text-2xl font-semibold text-[#138999] group-hover:text-white ">Quick fundraising</h1>
+    <h1 className="font-semibold text-[#138999] group-hover:text-white text-lg md:text-2xl ">Quick fundraising</h1>
     <div className="flex items-center space-x-3">
     
      <div className="bg-transparent rounded-full flex items-center justify-center p-1 relative group-hover:bg-white ">
@@ -90,7 +90,7 @@ const BestService = () => {
          </div>
 
      </div>
-     <p className="group-hover:text-white font-[900px] ">We poor standard chunk of Denounce righteous</p>
+     <p className="group-hover:text-white font-[900px]  text-sm md:text-md line-clamp-2">We poor standard chunk of Denounce righteous</p>
     </div>
     </div>
 
@@ -101,7 +101,7 @@ const BestService = () => {
     <Image src="/child.jpg" alt="child" fill objectFit="cover" className="rounded-bl-[90px] rounded-tl-[90px] rounded-tr-[90px] bg-white p-1"  />
     </div>
    <div className="flex flex-col space-y-4 px-5">
-   <h1 className="text-2xl font-semibold text-[#138999] group-hover:text-white">Quick fundraising</h1>
+   <h1 className="text-lg md:text-2xl font-semibold text-[#138999] group-hover:text-white">Quick fundraising</h1>
     <div className="flex items-center space-x-3">
     
      <div className="bg-transparent rounded-full flex items-center justify-center p-1 relative group-hover:bg-white ">
@@ -114,7 +114,7 @@ const BestService = () => {
          </div>
 
      </div>
-     <p className="group-hover:text-white font-[900px] ">We poor standard chunk of Denounce righteous</p>
+     <p className="group-hover:text-white font-[900px]  text-sm md:text-md line-clamp-2">We poor standard chunk of Denounce righteous</p>
     </div>
    </div>
 
@@ -125,7 +125,7 @@ const BestService = () => {
     <Image src="/child.jpg" alt="child" fill objectFit="cover" className="rounded-bl-[90px] rounded-tl-[90px] rounded-tr-[90px] bg-white p-1"  />
     </div>
     <div className="flex flex-col space-y-4 px-5">
-    <h1 className="text-2xl font-semibold text-[#138999] group-hover:text-white">Quick fundraising</h1>
+    <h1 className="text-lg md:text-2xl font-semibold text-[#138999] group-hover:text-white">Quick fundraising</h1>
     <div className="flex items-center space-x-3">
     
      <div className="bg-transparent rounded-full flex items-center justify-center p-1 relative group-hover:bg-white ">
@@ -138,7 +138,7 @@ const BestService = () => {
          </div>
 
      </div>
-     <p className="group-hover:text-white font-[900px] ">We poor standard chunk of Denounce righteous</p>
+     <p className="group-hover:text-white font-[900px] text-sm md:text-md line-clamp-2 ">We poor standard chunk of Denounce righteous</p>
     </div>
     </div>
 
@@ -149,7 +149,7 @@ const BestService = () => {
     <Image src="/child.jpg" alt="child" fill objectFit="cover" className="rounded-bl-[90px] rounded-tl-[90px] rounded-tr-[90px] bg-white p-1"  />
     </div>
     <div className="flex flex-col space-y-4 px-5">
-    <h1 className="text-2xl font-semibold text-[#138999] group-hover:text-white">Quick fundraising</h1>
+    <h1 className="text-lg md:text-2xl font-semibold text-[#138999] group-hover:text-white">Quick fundraising</h1>
     <div className="flex items-center space-x-3">
     
      <div className="bg-transparent rounded-full flex items-center justify-center p-1 relative group-hover:bg-white ">
@@ -162,7 +162,7 @@ const BestService = () => {
          </div>
 
      </div>
-     <p className="group-hover:text-white font-[900px] ">We poor standard chunk of Denounce righteous</p>
+     <p className="group-hover:text-white font-[900px]  text-sm md:text-md line-clamp-2">We poor standard chunk of Denounce righteous</p>
     </div>
     </div>
 
@@ -173,7 +173,7 @@ const BestService = () => {
     <Image src="/child.jpg" alt="child" fill objectFit="cover" className="rounded-bl-[90px] rounded-tl-[90px] rounded-tr-[90px] bg-white p-1"  />
     </div>
     <div className="flex flex-col px-8 space-y-5">
-    <h1 className="text-2xl font-semibold text-[#138999] group-hover:text-white ">Quick fundraising</h1>
+    <h1 className="text-lg md:text-2xl font-semibold text-[#138999] group-hover:text-white ">Quick fundraising</h1>
     <div className="flex items-center space-x-3">
     
      <div className="bg-transparent rounded-full flex items-center justify-center p-1 relative group-hover:bg-white ">
@@ -187,7 +187,7 @@ const BestService = () => {
 
      </div>
 
-     <p className="group-hover:text-white font-[900px] ">We poor standard chunk of Denounce righteous</p>
+     <p className="group-hover:text-white font-[900px]  text-sm md:text-md line-clamp-2">We poor standard chunk of Denounce righteous</p>
     </div>
 
     </div>

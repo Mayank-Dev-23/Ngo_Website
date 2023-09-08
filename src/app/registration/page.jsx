@@ -1,8 +1,23 @@
+'use client'
+
+
 import Image from 'next/image'
 import Link from 'next/link'
-import React from 'react'
+import React, { useState } from 'react'
+import CertificateTemplate from '../components/Certificatetemplate'
+import html2pdf from 'html2pdf.js'
+
 
 const Registration = () => {
+
+  const [name,Setname] =useState(' ');
+  const handleGenerateCertificate = (e) => {
+    // Generate PDF from the certificate template using html2pdf.js
+    // Download the PDF or display it to the user
+    e.preventDefault()
+    alert('downloading');
+    
+  };
   return (
 
     <div className='min-h-screen'>
@@ -39,10 +54,15 @@ const Registration = () => {
            </div>
             
         </div>
+        <form  onSubmit={(e)=>handleGenerateCertificate(e)}>
         <div className='bg-white flex flex-col justify-center border border-gray-100  p-5'>
 <div className='flex flex-col space-y-3'>
 <label htmlFor='name'>Name</label>
-        <input id="name" type='text' placeholder='Your Name*' className='p-2 focus:border-[#138999] outline-none border-dashed border-2 rounded-md border-gray-400' />
+        <input
+         value={name}
+         onChange={(e) => Setname(e.target.value)}
+         required
+        id="name" type='text' placeholder='Your Name*' className='p-2 focus:border-[#138999] outline-none border-dashed border-2 rounded-md border-gray-400' />
         <label htmlFor='email'>Email</label>
         <input id="email" type='text' placeholder='Your Email*' className='p-2 focus:border-[#138999] outline-none border-dashed border-2  rounded-md border-gray-400' />
         <label htmlFor='phone'>Phone Number</label>
@@ -55,9 +75,13 @@ const Registration = () => {
         <input id="gender" type='text' placeholder='Gender*' className='p-2 focus:border-[#138999] outline-none border-dashed border-2 rounded-md border-gray-400' />
 </div>
         <div className='flex items-center justify-center mt-8 w-full'>
-            <button className='p-4 bg-[#138999] text-white w-full font-semibold tracking-wide rounded-md'>Register</button>
+            <button  type="submit" className='p-4 bg-[#138999] text-white w-full font-semibold tracking-wide rounded-md'>Register</button>
         </div>
         </div>
+        </form>
+        <div className="mt-8">
+        {name && <CertificateTemplate id="certificateTemplate" recipientName={name} />}
+      </div>
     </div>
     </div>
   )

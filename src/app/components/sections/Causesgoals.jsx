@@ -79,13 +79,13 @@ const Causesgoals = () => {
                           </p>
                         </div>
                       </div>
-                      <div className="row-span-1 bg-white border flex px-6 py-14 flex-col border-gray-300 group-hover:border-[#2a6b75] transition-all ease-in duration-500">
-                        <div className="relative w-full h-2 rounded-full bg-gray-100">
+                      <div className="row-span-1  bg-white border flex px-3 py-14 flex-col border-gray-300 group-hover:border-[#2a6b75] transition-all ease-in duration-500">
+                        <div className="relative w-full h-2 rounded-full  bg-gray-100">
                         <div className="flex items-center justify-between mt-3">
                                     <p className="font-semibold">$2,230</p>
                                     <p className="font-semibold">$2,230</p>
                                 </div>
-                            <div className="absolute inset-0 w-64 bg-[#2a6b75] rounded-full">
+                            <div className="absolute inset-0 w-32 sm:w-64 bg-[#2a6b75]  rounded-full">
                                 <div className=" bg-[#2a6b75] p-1 absolute rounded-sm -top-10 -right-4 grid place-content-center">
                                     <p className="text-sm font-semibold text-white ">68%</p>
                                     <div className="bg-[#2a6b75] h-3 w-3 absolute -bottom-1 rotate-45 right-3"></div>

@@ -14,7 +14,7 @@ const Reviews = () => {
         />
         <div className="absolute  inset-0 rounded-[5rem] grid md:grid-cols-2 gap-6 ">
           <div className=" grid place-content-center">
-            <div className="relative h-96 w-96 bg-white rounded-full ">
+            <div className="relative h-56  w-56 md:h-96 md:w-96 bg-white rounded-full ">
               <Image src="/child.jpg" alt="child" fill className="rounded-full p-2" objectFit="cover" />
             </div>
           </div>
@@ -31,22 +31,22 @@ const Reviews = () => {
               <div className="flex items-center space-x-4 ">
               <div class="flex mb-5 -space-x-4">
                 <img
-                  class="w-16 h-16 border-[3px] shadow-md border-white rounded-full dark:border-gray-800"
+                  class=" h-10 w-10 md:w-16 md:h-16 border-[3px] shadow-md border-white rounded-full dark:border-gray-800"
                   src="/child.jpg"
                   alt=""
                 />
                 <img
-                  class="w-16 h-16 border-[3px] shadow-md border-white rounded-full dark:border-gray-800"
+                  class=" h-10 w-10 md:w-16 md:h-16 border-[3px] shadow-md border-white rounded-full dark:border-gray-800"
                   src="/child.jpg"
                   alt=""
                 />
                 <img
-                  class="w-16 h-16 border-[3px] shadow-md border-white rounded-full dark:border-gray-800"
+                  class=" h-10 w-10 md:w-16 md:h-16 border-[3px] shadow-md border-white rounded-full dark:border-gray-800"
                   src="/child.jpg"
                   alt=""
                 />
                 <img
-                  class="w-16 h-16 border-[3px] shadow-md border-white rounded-full dark:border-gray-800"
+                  class=" h-10 w-10 md:w-16 md:h-16 border-[3px] shadow-md border-white rounded-full dark:border-gray-800"
                   src="/child.jpg"
                   alt=""
                 />

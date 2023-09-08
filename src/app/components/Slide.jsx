@@ -27,7 +27,7 @@ const Slide = ({image}) => {
           <div className="h-20 w-48 sm:h-32 sm:w-56  md:w-80  relative ">
             <Image src="/notalogo2.png" fill alt="secondlogo" />
           </div>
-          <h1 className="uppercase mt-5 lg:mt-10 text-white   font-semibold text-4xl sm:text-5xl xl:text-7xl max-w-[400px] xl:max-w-[800px] sm:max-w-none">
+          <h1 className="uppercase mt-5 lg:mt-10 text-white   font-semibold text-2xl sm:text-5xl xl:text-7xl max-w-[400px] xl:max-w-[800px] sm:max-w-none">
             give someone hand the people poor.
           </h1>
           <p className="text-white mt-2 lg:mt-8 text-lg text-justify lg:max-w-[660px]">
