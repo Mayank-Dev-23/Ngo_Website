@@ -45,9 +45,9 @@ const Team = () => {
               <div className="h-2 w-2 bg-red-400"></div>
               <div className="h-2 w-2 bg-purple-400"></div>
             </div>
-            <h1 className="uppercase text-2xl font-semibold text-[#138999]">our team member</h1>
+            <h1 className="uppercase text-2xl font-semibold text-center text-[#138999]">our team member</h1>
           </div>
-        <h2 className="text-3xl lg:text-5xl text-[#144047] font-bold ">Happy Team Member Meet</h2>
+        <h2 className="text-3xl lg:text-5xl text-[#144047] text-center font-bold ">Happy Team Member Meet</h2>
       </div>
 
       <div className='mt-10 grid sm:grid-cols-2 p-4 md:grid-cols-3 max-w-5xl gap-10 mx-auto'>

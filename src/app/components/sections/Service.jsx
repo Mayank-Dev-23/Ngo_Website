@@ -18,7 +18,7 @@ const serviceDesc = [
     name: "Team off project",
     color: "border-[#138999]",
     bg: " bg-[#138999]",
-    icon: <People height={40} width={40} />,
+    icon: <People height={40} width={40} color="#2a6b75" />,
     desc: "We poor standard chunk of Denounce righteous",
   },
   {

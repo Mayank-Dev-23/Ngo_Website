@@ -9,24 +9,9 @@ const CertificateTemplate = () => {
     const currentDate = dayjs().format('YYYY-MM-DD');
     const currentTime = dayjs().format('HH:mm:ss');
 
-    const handleDownloadPdf = () => {
-        const element = document.getElementById('content-to-pdf'); // Replace with the ID of your HTML content element
-        const pdfOptions = {
-          margin: 10,
-          filename: 'document.pdf',
-          image: { type: 'jpeg', quality: 0.98 },
-          html2canvas: { scale: 2 },
-          jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' },
-        };
+  
     
-        window.html2pdf()
-          .from(element)
-          .set(pdfOptions)
-          .outputPdf((pdf) => {
-            // Trigger the download of the PDF
-            pdf.output('dataurlnewwindow');
-          });
-      };
+      
   return (
     <div>
     <div  id="content-to-pdf" className='min-h-[600px] mt-10 relative bg-gray-400 flex flex-col min-w-[400px] max-w-4xl mx-auto'>
@@ -49,7 +34,7 @@ const CertificateTemplate = () => {
     </div>
     <div className='w-full grid place-content-center mt-10 '>
         <button 
-        onClick={handleDownloadPdf}
+      // onClick={generatePDF}
         className='p-4 bg-gray-500 text-white items-center rounded-md'>Download</button>
     </div>
     </div>

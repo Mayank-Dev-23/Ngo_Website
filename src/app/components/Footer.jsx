@@ -16,10 +16,10 @@ const social=[
 
 const Footer = () => {
   return (
-    <div className=' w-full mt-32'>
+    <div className=' w-full '>
         {/* --------- */}
         <div className='mt-[27rem] md:mt-40 '>
-        <div className='h-48 w-full relative overflow-hidden'>
+        <div className='h-48 hide w-full relative overflow-hidden'>
            
             <Image  src="/subscribe.jpg" fill alt="banner" />
             <div className=' absolute inset-0 grid md:grid-cols-4 w-full'>
@@ -28,10 +28,10 @@ const Footer = () => {
                         <Speaker height={100} width={100} />
                     </div>
                 </div>
-                <div className='relative md:col-span-2 w-full p-6 '>
+                <div className='relative  md:col-span-2 w-full p-6 '>
 
                     <div className='flex flex-col space-y-5  w-full  items-center justify-center '>
-                        <h1 className='text-3xl  font-semibold text-center text-white'>Subscribe Newsletter in your to connect our services</h1>
+                        <h1 className='text-xl  font-semibold text-center text-white'>Subscribe Newsletter in your to connect our services</h1>
                         <div className='bg-white rounded-full p-1  flex items-center justify-between'>
                             <input type='email' placeholder='Email Address*' className='outline-none p-1 bg-transparent border-none' />
                             <button className='uppercase text-white rounded-full px-5 font-semibold bg-[#138999] p-2'>subscribe</button>
@@ -46,7 +46,7 @@ const Footer = () => {
         </div>
     </div>
         {/* --------- */}
-    <div className=' relative h-[80rem] md:h-96 w-full '>
+    <div className=' relative h-[80rem] md:h-[38rem] lg:h-[30rem]  w-full '>
         <Image src="/footer.jpg" fill objectFit='cover' alt="footerbanner" />
 
         <div className='grid absolute md:grid-cols-2 p-10 lg:grid-cols-4  gap-3  inset-0 max-w-7xl mx-auto'>
@@ -67,11 +67,11 @@ const Footer = () => {
             <div className='flex flex-col text-white font-semibold space-y-4 '>
                 <h1 className='text-2xl  '>Quick Links</h1>
                <div className='flex flex-col space-y-3 mt-2'>
-               <p className='text-md mt-4'>-Best Services</p>
-                <p className='text-md'>-Department</p>
-                <p className='text-md'>-About Our Company</p>
-                <p className='text-md'>Business Contact</p>
-                <p className='text-md'>Make An Appointment</p>
+               <p className='text-md mt-4'>- Best Services</p>
+                <p className='text-md'>- Department</p>
+                <p className='text-md'>- About Our Company</p>
+                <p className='text-md'>- Business Contact</p>
+                <p className='text-md'>- Make An Appointment</p>
                </div>
             </div>
             <div className='flex flex-col'>
@@ -105,11 +105,7 @@ const Footer = () => {
                         <p>Email: example@mail.com </p>
                         <p>Website: yourwebsite.com </p>
                     </div>
-                </div>
-            </div>
-            <div className=' absolute bottom-14 w-full px-10 '>
-            <div className='h-[0.1rem] w-full bg-white'></div>
-            <div className='flex flex-col  md:flex-row w-full md:items-center md:justify-between'>
+                    <div className='flex flex-col  md:flex-row w-full md:items-center md:justify-between'>
                 <p className='text-white'>Copyright ©Nonta 2023 all rights reserved.</p>
                 <div className='flex items-center space-x-3 text-white  font-semibold'>
                     <p>Privacy</p>
@@ -117,7 +113,14 @@ const Footer = () => {
                     <p>About</p>
                 </div>
             </div>
+                </div>
             </div>
+            
+            <div className=' absolute bottom-14 w-full px-10 '>
+            <div className='h-[0.1rem] w-full bg- '></div>
+            
+            </div>
+            
             
         </div>
         

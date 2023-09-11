@@ -5,12 +5,13 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React, { useState } from 'react'
 import CertificateTemplate from '../components/Certificatetemplate'
-import html2pdf from 'html2pdf.js'
+
+// import html2pdf from 'html2pdf.js'
 
 
 const Registration = () => {
 
-  const [name,Setname] =useState(' ');
+  const [name,Setname] =useState(null);
   const handleGenerateCertificate = (e) => {
     // Generate PDF from the certificate template using html2pdf.js
     // Download the PDF or display it to the user
@@ -22,7 +23,7 @@ const Registration = () => {
 
     <div className='min-h-screen'>
          {/* top section  */}
-      <div className="h-[15rem] md:h-[40rem] relative w-full">
+      <div className="h-[15rem] md:h-[40rem] relative w-full ">
         <Image
           src="/certificate.jpg"
           fill
@@ -46,7 +47,7 @@ const Registration = () => {
           </div>
         </div>
       </div>
-    <div className='grid md:grid-cols-2 shadow-lg  max-w-5xl mt-20 mx-auto'>
+    <div className='grid md:grid-cols-2 shadow-lg  max-w-5xl mt-20 mx-auto p-3 '>
         <div className='bg-black grid  h-[30rem]  md:h-auto place-content-center relative'>
             <Image src="/registration.jpg" alt="certificateillustration" fill objectFit='cover' className='opacity-50' />
            <div className='absolute inset-0 grid place-content-center'>
@@ -64,24 +65,24 @@ const Registration = () => {
          required
         id="name" type='text' placeholder='Your Name*' className='p-2 focus:border-[#138999] outline-none border-dashed border-2 rounded-md border-gray-400' />
         <label htmlFor='email'>Email</label>
-        <input id="email" type='text' placeholder='Your Email*' className='p-2 focus:border-[#138999] outline-none border-dashed border-2  rounded-md border-gray-400' />
+        <input required id="email" type='text' placeholder='Your Email*' className='p-2 focus:border-[#138999] outline-none border-dashed border-2  rounded-md border-gray-400' />
         <label htmlFor='phone'>Phone Number</label>
-        <input id="phone" type='text' placeholder='Your Phone Number*' className='p-2 focus:border-[#138999] outline-none border-dashed border-2 rounded-md border-gray-400' />
+        <input required id="phone" type='text' placeholder='Your Phone Number*' className='p-2 focus:border-[#138999] outline-none border-dashed border-2 rounded-md border-gray-400' />
         <label htmlFor='address'>Address</label>
-        <input type='text' id="address" placeholder='Your Address*' className='p-2 focus:border-[#138999] outline-none border-dashed border-2 rounded-md border-gray-400' />
+        <input required type='text' id="address" placeholder='Your Address*' className='p-2 focus:border-[#138999] outline-none border-dashed border-2 rounded-md border-gray-400' />
         <label htmlFor='aadhaar'>Aadhaar Number</label>
-        <input type='text' id="aadhaar" placeholder='Your Aadhaar Number*' className='p-2 focus:border-[#138999] outline-none border-dashed border-2 rounded-md border-gray-400' />
+        <input required type='text' id="aadhaar" placeholder='Your Aadhaar Number*' className='p-2 focus:border-[#138999] outline-none border-dashed border-2 rounded-md border-gray-400' />
         <label htmlFor='gender'>Gender</label>
-        <input id="gender" type='text' placeholder='Gender*' className='p-2 focus:border-[#138999] outline-none border-dashed border-2 rounded-md border-gray-400' />
+        <input required id="gender" type='text' placeholder='Gender*' className='p-2 focus:border-[#138999] outline-none border-dashed border-2 rounded-md border-gray-400' />
 </div>
         <div className='flex items-center justify-center mt-8 w-full'>
             <button  type="submit" className='p-4 bg-[#138999] text-white w-full font-semibold tracking-wide rounded-md'>Register</button>
         </div>
         </div>
         </form>
-        <div className="mt-8">
+        {/* <div className="mt-8">
         {name && <CertificateTemplate id="certificateTemplate" recipientName={name} />}
-      </div>
+      </div> */}
     </div>
     </div>
   )

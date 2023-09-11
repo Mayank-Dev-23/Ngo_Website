@@ -16,7 +16,7 @@ const color =[
 const BestService = () => {
     
   return (
-    <div className="mt-20 p-10 bg-[#f1f7f7] h-auto w-full relative">
+    <div className="mt-20 p-3 bg-[#f1f7f7] h-auto w-full relative">
       <div className="absolute top-10 ">
         <div className="h-20 w-20 md:h-56 md:w-56 relative">
           <Image src="/abh1.png" fill alt="banner" />
@@ -40,14 +40,14 @@ const BestService = () => {
               <div className="h-2 w-2 bg-red-400"></div>
               <div className="h-2 w-2 bg-purple-400"></div>
             </div>
-            <h1 className="uppercase text-2xl font-semibold text-[#138999]">our best service</h1>
+            <h1 className="uppercase text-2xl font-semibold text-center text-[#138999]">our best service</h1>
           </div>
-        <h2 className="text-3xl font-bold ">What Best Service talking</h2>
+        <h2 className="text-3xl font-bold text-center ">What Best Service talking</h2>
       </div>
 
       {/* cards  */}
-      <div className="grid sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 max-w-7xl mx-auto">
-      <div className={`bg-white transition-all duration-500 ease-in-out hover:bg-[#df5311] group  flex flex-col p-3 m-3 rounded-[90px]`}>
+      <div className="grid sm:grid-cols-2 md:grid-cols-2 w-full lg:grid-cols-3 gap-4 max-w-7xl mt-6 mx-auto">
+      <div className={`bg-white transition-all w-full duration-500 ease-in-out hover:bg-[#df5311] group  flex flex-col p-3 rounded-[90px] `}>
     <div className="h-56 w-full relative ">
     <Image src="/child.jpg" fill objectFit="cover" alt="child" className="rounded-bl-[90px]  rounded-tl-[90px] rounded-tr-[90px] bg-white p-1"  />
     </div>
@@ -71,7 +71,7 @@ const BestService = () => {
 
  </div>
 
- <div className={`bg-white group hover:bg-[#138999]  transition-all duration-500 ease-in-out flex flex-col p-3 m-3 rounded-[90px]`}>
+ <div className={`bg-white group hover:bg-[#138999]  transition-all duration-500 ease-in-out flex flex-col p-3 rounded-[90px]`}>
     <div className="h-56 w-full relative ">
     <Image src="/child.jpg" alt="child" fill objectFit="cover" className="rounded-bl-[90px] rounded-tl-[90px] rounded-tr-[90px] bg-white p-1"  />
     </div>
@@ -96,7 +96,7 @@ const BestService = () => {
 
  </div>
 
- <div className={`bg-white group hover:bg-[#853fe8] transition-all duration-500 ease-in-out  flex flex-col p-3 m-3 rounded-[90px]`}>
+ <div className={`bg-white group hover:bg-[#853fe8] transition-all duration-500 ease-in-out  flex flex-col p-3  rounded-[90px]`}>
     <div className="h-56 w-full relative ">
     <Image src="/child.jpg" alt="child" fill objectFit="cover" className="rounded-bl-[90px] rounded-tl-[90px] rounded-tr-[90px] bg-white p-1"  />
     </div>
@@ -120,7 +120,7 @@ const BestService = () => {
 
  </div>
 
- <div className={`bg-white group  transition-all duration-500 ease-in-out hover:bg-[#ffad0e] flex flex-col p-3 m-3 rounded-[90px]`}>
+ <div className={`bg-white group  transition-all duration-500 ease-in-out hover:bg-[#ffad0e] flex flex-col p-3  rounded-[90px]`}>
     <div className="h-56 w-full relative ">
     <Image src="/child.jpg" alt="child" fill objectFit="cover" className="rounded-bl-[90px] rounded-tl-[90px] rounded-tr-[90px] bg-white p-1"  />
     </div>
@@ -144,7 +144,7 @@ const BestService = () => {
 
  </div>
 
- <div className={`bg-white group  hover:bg-[#36c691]  transition-all duration-500 ease-in-out flex flex-col p-3 m-3 rounded-[90px]`}>
+ <div className={`bg-white group  hover:bg-[#36c691]  transition-all duration-500 ease-in-out flex flex-col p-3  rounded-[90px]`}>
     <div className="h-56 w-full relative ">
     <Image src="/child.jpg" alt="child" fill objectFit="cover" className="rounded-bl-[90px] rounded-tl-[90px] rounded-tr-[90px] bg-white p-1"  />
     </div>
@@ -168,7 +168,7 @@ const BestService = () => {
 
  </div>
 
- <div className={`bg-white group transition-all z-30 duration-500 ease-in-out  hover:bg-[#2e9ecd] flex flex-col p-3 m-3 rounded-[90px]`}>
+ <div className={`bg-white group transition-all z-30 duration-500 ease-in-out  hover:bg-[#2e9ecd] flex flex-col p-3  rounded-[90px]`}>
     <div className="h-56 w-full relative ">
     <Image src="/child.jpg" alt="child" fill objectFit="cover" className="rounded-bl-[90px] rounded-tl-[90px] rounded-tr-[90px] bg-white p-1"  />
     </div>

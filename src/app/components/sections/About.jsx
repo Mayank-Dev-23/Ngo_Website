@@ -6,12 +6,14 @@ import CheckMark from "@/app/assests/icons/CheckMark";
 import People from "@/app/assests/icons/People";
 import RightArrow from "@/app/assests/icons/RightArrow";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 import React, { useState } from "react";
 
 const About = () => {
   const [change, setChange] = useState(false);
+  const router= useRouter();
   return (
-    <div className="relative  overflow-hidden lg:mt-10 z-20">
+    <div className={`relative   ${router.pathname==="/about" ? "mt-1" :'mt-32'} overflow-hidden  z-20`}>
       <div className="absolute -bottom-20 z-50  md:-right-[20rem] lg:-right-[10rem]  hide ">
          <div className="h-[400px] w-[500px] relative">
             <Image  src="/splash.png" fill  alt="splash" />
@@ -35,7 +37,7 @@ const About = () => {
           ></div>
 
           <div className="absolute ">
-            <People height={40} width={40} />
+            <People height={40} width={40}  color="#2a6b75"/>
           </div>
         </div>
        </div>

@@ -48,11 +48,11 @@ const Donate = () => {
         <div className='flex  items-center justify-center'>
          <h1 className='text-3xl'>Donate Us To Support In Our Works!</h1>
         </div>
-        <div className='grid md:grid-cols-2 mt-8 p-8 gap-8'>
+        <div className='grid md:grid-cols-2 mt-8 p-8 gap-8 w-full'>
           
           {Array(2).fill().map((i)=>{
             return (
-              <div key={i} className='bg-white p-2 shadow-lg border-gray-100 border'>
+              <div key={i} className='bg-white p-2  shadow-lg relative w-full border-gray-100 border'>
             <div className=' h-96 w-full relative'>
               <Image src="/child.jpg" alt="child" fill objectFit='cover'/>
             </div>
@@ -73,12 +73,9 @@ const Donate = () => {
                 </div>
               </div>
             </div>
+           
 
-            <div className='mt-4 '>
-              <div className='h-2 w-full rounded-full bg-gray-100 relative'>
-                <div className='h-2 rounded-full w-96 bg-[#138999] absolute inset-0'></div>
-              </div>
-            </div>
+            
             <div className='flex items-center justify-between mt-3'>
               <button className='p-3 border border-[#138999] text-md  text-white bg-[#138999] rounded-md'>Donate Us</button>
               <button className='p-3 border border-[#138999] text-md  text-black bg-white rounded-md'>Contact Us</button>

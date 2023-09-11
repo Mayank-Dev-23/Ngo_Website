@@ -66,14 +66,14 @@ const ContactUs = () => {
                 className="bg-white border-[1.6px] flex items-center p-5   space-x-5 rounded-md border-dashed"
                 style={{ borderColor: data.color }}
               >
-                <div className=" p-4 rounded-full" style={{backgroundColor:data.color}}>
+                <div className=" p-3 md:p-4 rounded-full" style={{backgroundColor:data.color}}>
                   {data.icon}
                 </div>
 
                 <div className="flex flex-col space-y-1 text-justify">
-                  <h1 className="text-2xl font-semibold text-[#144047]">{data.name}</h1>
-                  <p>{data.data1}</p>
-                  <p>{data.data2}</p>
+                  <h1 className=" text-md md:text-2xl font-semibold text-[#144047]">{data.name}</h1>
+                  <p className="text-sm">{data.data1}</p>
+                  <p className="text-sm">{data.data2}</p>
                 </div>
               </div>
             );

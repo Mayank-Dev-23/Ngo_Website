@@ -49,7 +49,7 @@ const HomePage = () => {
   allowTouchMove={true}
   effect={'fade'}
         navigation={true}
-        pagination={pagination}
+        
         modules={[EffectFade, Pagination]}
       
    

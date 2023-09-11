@@ -33,19 +33,19 @@ const Projects = () => {
             <div className="flex flex-col space-y-3">
               <div className="flex items-center space-x-2">
                 <div className="flex flex-col space-y-1">
+                  <div className="h-2 w-2 bg-[#2a6b75]"></div>
                   <div className="h-2 w-2 bg-seconday"></div>
-                  <div className="h-2 w-2 bg-green-400"></div>
                 </div>
                 <h1 className="text-xl lg:text-2xl tracking-wide uppercase text-white font-semibold">
-                  our causes goals
+                  our best projects
                 </h1>
               </div>
-              <h1 className="text-[2.4rem] font-extrabold text-white">We Charity Shops Pojects</h1>
+              <h1 className=" text-3xl md:text-[2.4rem] font-extrabold text-white">We Charity Shops Pojects</h1>
             </div>
-            <p className="max-w-[500px] text-white text-lg">Services address a range of simply application and infrastructure of passages of available, but the majority have suffered alteration in some form.</p>
+            <p className="max-w-[500px] text-white text-md mt-5 md:mt-0 md:text-lg">Services address a range of simply application and infrastructure of passages of available, but the majority have suffered alteration in some form.</p>
           </div>
 
-          <div className="h-96 w-full  ">
+          <div className="h-96 w-full p-3 ">
             <Swiper {...swiperParams}>
                 {Array(14).fill().map((i)=>{
                     return (

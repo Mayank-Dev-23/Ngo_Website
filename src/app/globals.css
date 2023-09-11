@@ -89,4 +89,9 @@
     animation: spin 3s  infinite;
   }
 
+
+  .active-link {
+    color: red; /* Change this to your desired active link color */
+    /* Add any other styles you want for active links */
+  }
   

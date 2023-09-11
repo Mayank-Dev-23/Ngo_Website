@@ -30,17 +30,17 @@ const Causesgoals = () => {
     const [change,setChange] =useState(false);
   return (
     <div className="w-full mt-20 relative  ">
-      <div className="flex flex-col items-center w-full">
+      <div className="flex flex-col items-center  w-full">
         <div className="flex items-center space-x-2">
           <div className="flex flex-col space-y-1">
+            <div className="h-2 w-2 bg-[#2a6b75]"></div>
             <div className="h-2 w-2 bg-seconday"></div>
-            <div className="h-2 w-2 bg-green-400"></div>
           </div>
           <h1 className="text-xl lg:text-2xl tracking-wide uppercase text-[#138999] font-semibold">
             our causes goals
           </h1>
         </div>
-        <h1 className="text-3xl lg:text-5xl tracking-wide font-bold text-[#144047] mt-4">
+        <h1 className="   text-3xl lg:text-5xl text-center tracking-wide font-bold text-[#144047] mt-4">
           We Gools Popular Causes
         </h1>
       </div>

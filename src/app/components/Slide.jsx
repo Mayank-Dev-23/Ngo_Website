@@ -2,6 +2,7 @@ import Image from "next/image";
 import React, { useState } from "react";
 import RightArrow from "../assests/icons/RightArrow";
 import Play from "../assests/icons/Play";
+import Link from "next/link";
 
 const Slide = ({image}) => {
 
@@ -22,10 +23,10 @@ const Slide = ({image}) => {
       <div className="h-[30rem] sm:h-[40rem]  md:h-[50rem] lg:h-[55rem]  w-full relative">
         <Image src={image.image} alt={image.image} fill objectPosition="center" objectFit="cover"  />
       </div>
-      <div className="absolute top-20 w-full max-w-7xl mx-auto lg:left-[50%] lg:-translate-x-[50%] lg:grid lg:grid-cols-6 ">
+      <div className="absolute top-0 md:top-20 w-full max-w-7xl mx-auto lg:left-[50%] lg:-translate-x-[50%] lg:grid lg:grid-cols-6 ">
         <div className="flex flex-col col-span-5 px-5 mt-6 sm:mt-24 h-full">
           <div className="h-20 w-48 sm:h-32 sm:w-56  md:w-80  relative ">
-            <Image src="/notalogo2.png" fill alt="secondlogo" />
+            <Image src="/sikarialogo.png" fill alt="secondlogo" />
           </div>
           <h1 className="uppercase mt-5 lg:mt-10 text-white   font-semibold text-2xl sm:text-5xl xl:text-7xl max-w-[400px] xl:max-w-[800px] sm:max-w-none">
             give someone hand the people poor.
@@ -36,10 +37,11 @@ const Slide = ({image}) => {
           </p>
 
           <div className="flex items-center space-x-10 mt-6 lg:mt-10">
+            <Link href="/donate">
             <button
               onMouseEnter={() => setChange(true)}
               onMouseLeave={() => setChange(false)}
-              className="uppercase   relative  bg-white border border-seconday overflow-hidden group p-4 px-6 font-bold flex items-center gap-4 hover:text-white text-seconday tracking-wide"
+              className="uppercase    relative  bg-white border border-seconday overflow-hidden group p-4 px-6 font-bold flex items-center gap-4 hover:text-white text-seconday tracking-wide"
             >
               <p className="z-50">donate now</p>
               <div className="h-7 w-full bg-seconday absolute  z-20  -translate-x-[100%] group-hover:-translate-x-0 transition-all duration-300 ease-in inset-0"></div>
@@ -52,18 +54,19 @@ const Slide = ({image}) => {
                 />
               </div>
             </button>
+            </Link>
 
             <div className="flex items-center space-x-3">
              
 
-             <div className="relative cursor-pointer">
+             <div className="relative hide cursor-pointer">
              <div className="h-16 w-16 absolute inset-0 -top-[5px]  pulse-animation -left-[5px] border  border-white flex items-center justify-center rounded-full"></div>
              <div className="h-20 w-20 absolute inset-0 -top-[12px] -left-[13px] pulse-animation border   border-white flex items-center justify-center rounded-full"></div>
              <button className="bg-white p-3     rounded-full flex items-center justify-center">
                 <Play height={30} width={30} />
               </button>
              </div>
-             <h1 className="uppercase text-white font-semibold">watach video</h1>
+             <h1 className="uppercase hide text-white font-semibold">watch video</h1>
             </div>
           </div>
         </div>
