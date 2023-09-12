@@ -8,7 +8,7 @@ const Donation = () => {
   const [change, setChange] = useState(false);
   return (
     <div className="h-[30rem] w-full relative">
-      <Image src="/donation.jpg" fill objectFit="cover" />
+      <Image src="/donation.jpg" fill objectFit="cover" alt="banner" />
       <div className="absolute w-full h-full md:grid place-content-center px-4 py-10">
         <div className="flex flex-col space-y-6">
           {/* Head  */}

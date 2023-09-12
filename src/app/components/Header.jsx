@@ -15,6 +15,7 @@ import Sidebar from "./Sidebar";
 import Hamburger from "../assests/icons/Hamburger";
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
+import SideNavbar from "./SideNavbar";
 
 const linkCat = [
   { id: 1, name: "Home", link: "/" },
@@ -30,11 +31,16 @@ const Header = () => {
   const [currentTextIndex, setCurrentTextIndex] = useState(0);
   const [currentText, setCurrentText] = useState(texts[currentTextIndex]);
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+  const [sidenav,Setsidenav] =useState(false);
   const router = useRouter();
   const pathname= usePathname();
 
   const toggleSidebar = () => {
     setIsSidebarOpen(!isSidebarOpen);
+    document.body.classList.toggle("overflow-hidden"); // Disable body scroll
+  };
+  const tooglesidenav = () => {
+    Setsidenav(!sidenav);
     document.body.classList.toggle("overflow-hidden"); // Disable body scroll
   };
 
@@ -51,13 +57,14 @@ const Header = () => {
   return (
     <header className="bg-white  flex w-full shadow-lg sticky top-0  z-50 space-x-10 h-20 lg:h-full   ">
       <Sidebar isOpen={isSidebarOpen} onClose={toggleSidebar} />
+      <SideNavbar open={sidenav} onclose={tooglesidenav}  />
 
       {/* logo  */}
       <div className="z-40 hide relative">
         <div className="absolute -top-[11%] left-[1.75rem]  z-30">
           <div className="relative h-40 w-40">
             <Link href="/">
-              {" "}
+              
               <Image
                 src="/sikarialogo.png"
                 fill
@@ -92,7 +99,7 @@ const Header = () => {
           <div className="flex items-center justify-between px-28 h-full w-[55%] ">
             {linkCat.map(({link,name,}) => {
               return (
-                <Link href={`${link}`}>
+                <Link key={link} href={`${link}`}>
                   <p
                     className={pathname.startsWith("/" + name.toLowerCase()) ? " text-[#138999] font-semibold":" text-slate-700 font-semibold"}
                   >
@@ -139,6 +146,7 @@ const Header = () => {
 
       {/* mob  */}
       <div className="flex items-center justify-between show w-full px-4">
+        <Link href="/">
         <div className="h-16 w-32 relative -ml-10">
           <Image
             src="/sikarialogo.png"
@@ -147,8 +155,11 @@ const Header = () => {
             alt="sikaria foundation"
           />
         </div>
-        <div className="cursor-pointer">
-          <Hamburger height={40} width={40} />
+        </Link>
+        <div 
+        onClick={tooglesidenav}
+        className="cursor-pointer">
+          <Hamburger height={40} width={40} onClick />
         </div>
       </div>
     </header>

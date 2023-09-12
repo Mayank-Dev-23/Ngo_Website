@@ -4,7 +4,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import React, { useState } from 'react'
-import CertificateTemplate from '../components/Certificatetemplate'
+
 
 // import html2pdf from 'html2pdf.js'
 
@@ -12,13 +12,7 @@ import CertificateTemplate from '../components/Certificatetemplate'
 const Registration = () => {
 
   const [name,Setname] =useState(null);
-  const handleGenerateCertificate = (e) => {
-    // Generate PDF from the certificate template using html2pdf.js
-    // Download the PDF or display it to the user
-    e.preventDefault()
-    alert('downloading');
-    
-  };
+
   return (
 
     <div className='min-h-screen'>
@@ -55,7 +49,7 @@ const Registration = () => {
            </div>
             
         </div>
-        <form  onSubmit={(e)=>handleGenerateCertificate(e)}>
+        <form  >
         <div className='bg-white flex flex-col justify-center border border-gray-100  p-5'>
 <div className='flex flex-col space-y-3'>
 <label htmlFor='name'>Name</label>

@@ -26,7 +26,7 @@ const Sidebar = ({ isOpen, onClose }) => {
 
             <div className='flex flex-col items-center '>
                 <div className='h-36 w-64 relative'>
-                    <Image src="/desktoplogo.png" alt="logo" fill objectFit='contain' />
+                    <Image src="/sikarialogo.png" alt="logo" fill objectFit='contain' />
                 </div>
                 <h1 className='text-lg text-center text-white mt-4'>Nonta is a website that builds and organizes nonprofit programs for private and government organizations.</h1>
                 <h1 className='mt-14 text-4xl font-semibold'>Contact Info</h1>
@@ -42,7 +42,7 @@ const Sidebar = ({ isOpen, onClose }) => {
 
                         {social.map((social,i)=>{
                             return(
-                                <div key={i} className='bg-white rounded-full p-3'>
+                                <div key={i} className='bg-white rounded-full cursor-pointer p-3'>
                                     {social.icon}
                                 </div>
                             )
