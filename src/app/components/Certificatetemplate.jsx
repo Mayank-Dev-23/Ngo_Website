@@ -3,23 +3,25 @@ import Image from "next/image";
 import html2canvas from "html2canvas";
 import jsPDF from "jspdf";
 import RightArrow from '../assests/icons/RightArrow';
+import { useSelector } from 'react-redux';
 
 const Certificatetemplate = () => {
-    const name="mayank"
+  const formData = useSelector((state) => state.formData);
+    
     const certificateref=useRef();
 
     const handleGenerateCertificate = async () => {
-        alert('downloading')
+       
       
         html2canvas(certificateref.current,{scale:2}).then(canvas=>{
           const imgData=canvas.toDataURL('image/png');
           // create a new jspdf instance and add the screenshot as an image
-          const pdf=new jsPDF('l','mm','a4',[297,250])
-          pdf.addImage(imgData,'PNG',0,0,297,250)
+          const pdf=new jsPDF('l','mm','a4',[297,210])
+          pdf.addImage(imgData,'PNG',0,0,297,210)
       
       
           // download pdf 
-          pdf.save(`${name.split(' ').join('_')}_certificate`)
+          pdf.save(`${formData.name.split(' ').join('_')}_certificate`)
       
         })
         };
@@ -37,17 +39,16 @@ const Certificatetemplate = () => {
         className="absolute inset-0"
         objectFit="cover"
       />
+
+      <div className='absolute inset-0 grid place-content-center'>
+        <h1 className='text-5xl pt-1'> {formData.name}</h1>
+      </div>
        
      
     </div>
     
     <div className="w-full grid place-content-center mt-10 ">
-      <button
       
-        className="p-4 bg-[#138999] text-white items-center rounded-md"
-      >
-        Click here to download the certificate
-      </button>
       <button
       onClick={handleGenerateCertificate}
       className="uppercase  rounded-md relative  bg-primary overflow-hidden group p-3 px-4 font-bold flex items-center gap-4 text-white tracking-wide">
