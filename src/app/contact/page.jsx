@@ -5,7 +5,7 @@ import ContactForm from "../components/ContactForm";
 import Email from "../assests/icons/Email";
 import Location from "../assests/icons/Location";
 import Phone from "../assests/icons/Phone";
-import Maps from "../components/Maps";
+
 
 const contact = [
     {
