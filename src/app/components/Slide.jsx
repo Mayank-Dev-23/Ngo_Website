@@ -25,7 +25,7 @@ const Slide = ({image}) => {
       </div>
       <div className="absolute top-0 md:top-20 w-full max-w-7xl mx-auto lg:left-[50%] lg:-translate-x-[50%] lg:grid lg:grid-cols-6 ">
         <div className="flex flex-col col-span-5 px-5 mt-6 sm:mt-24 h-full">
-          <div className="h-20 w-48 sm:h-32 sm:w-56  md:w-80  relative ">
+          <div className="h-28 w-48 sm:h-32 sm:w-56  md:w-80  relative ">
             <Image src="/sikarialogo.png" fill alt="secondlogo" />
           </div>
           <h1 className="uppercase mt-5 lg:mt-10 text-white   font-semibold text-2xl sm:text-5xl xl:text-7xl max-w-[400px] xl:max-w-[800px] sm:max-w-none">
