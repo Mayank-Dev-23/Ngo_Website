@@ -19,7 +19,7 @@ const About = () => {
             <Image  src="/splash.png" fill  alt="splash" />
           </div>
          </div>
-    <div className="mt-10 relaitve p-4">
+    <div className="mt-[21.5rem] sm:mt-10 relaitve p-4">
        
       
       <div className="grid lg:grid-cols-2  gap-20 lg:gap-40 relative max-w-[80rem] mx-auto">
