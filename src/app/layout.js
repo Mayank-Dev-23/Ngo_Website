@@ -19,10 +19,10 @@ const store = configureStore({
   },
 });
 
-export const metadata = {
-  title: "Sikaria Foundation",
-  description: "Sikaria Foundation",
-};
+// export const metadata = {
+//   title: "Sikaria Foundation",
+//   description: "Sikaria Foundation",
+// };
 
 export default function RootLayout({ children }) {
   return (
