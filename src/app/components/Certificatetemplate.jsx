@@ -5,7 +5,7 @@ import jsPDF from "jspdf";
 import RightArrow from '../assests/icons/RightArrow';
 import { useSelector } from 'react-redux';
 
-const CertificateTemplate = () => {
+ export const CertificateTemplate = () => {
   const formData = useSelector((state) => state.formData);
     
     const certificateref=useRef();
@@ -64,4 +64,3 @@ const CertificateTemplate = () => {
   )
 }
 
-export default CertificateTemplate
