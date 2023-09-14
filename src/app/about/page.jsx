@@ -66,7 +66,7 @@ const about = () => {
           <div className='h-40 w-40 group-hover:opacity-0 absolute bottom-0 right-0'>
           <Image  src="/hands.png" fill alt="hands" />
           </div>
-         <div className='flex flex-col space-y-3 z-50'>
+         <div className='flex flex-col space-y-3 z-20'>
          <h1 className=' text-xl font-semibold'>01</h1>
           <h1 className='text-2xl font-semibold'>People are lifted poverty for this Poor</h1>
           <p className='text-md'>We poor standard chunk ofI nibh velit auctor aliquet sollic tudin</p>
