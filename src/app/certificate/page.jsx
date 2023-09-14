@@ -1,6 +1,7 @@
 'use client';
 import React from "react";
-import Certificatetemplate from "../components/CertificateTemplate";
+import CertificateTemplate from "../components/CertificateTemplate";
+
 
 
 // import dayjs from "dayjs";
@@ -24,10 +25,10 @@ const page = () => {
 
 
   return (
-    <div>
+  
    
-      <Certificatetemplate />
-      </div>
+      <CertificateTemplate />
+    
       
     
   );
