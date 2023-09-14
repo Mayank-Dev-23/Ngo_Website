@@ -33,7 +33,7 @@ const serviceDesc = [
 
 const Service = () => {
   return (
-   <div className="static">
+   <div className="static mb-[30rem] sm:mb-32">
      <div className="relative h-[80%] sm:h-[50%] md:h-auto lg:h-[50%] xl:h-auto">
       <div className=" flex  lg:justify-center p-4 lg:p-0">
         <div className="lg:w-[100%] xl:w-[100%] 2xl:w-[70%] h-72  relative w-full ">

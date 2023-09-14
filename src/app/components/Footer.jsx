@@ -117,7 +117,7 @@ const Footer = () => {
             </div>
             
             <div className=' absolute bottom-14 w-full px-10 '>
-            <div className='h-[0.1rem] w-full bg- '></div>
+            <div className='h-[0.1rem] w-full bg-gray-100 '></div>
             
             </div>
             
