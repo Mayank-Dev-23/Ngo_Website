@@ -15,10 +15,12 @@ import ContactUs from './components/sections/ContactUs'
 
 
 
+
 export default function Home() {
   
   return (
     <main className='h-auto w-full relative  '>
+  
       
 
       <HomePage /> 

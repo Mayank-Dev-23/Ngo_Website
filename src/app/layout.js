@@ -10,7 +10,11 @@ import { configureStore } from "@reduxjs/toolkit";
 
 
 
-const inter = Inter({ subsets: ["latin"] });
+
+
+const inter =Inter({
+  subsets:['latin'],
+})
 
 const store = configureStore({
   reducer: {
@@ -27,7 +31,9 @@ const store = configureStore({
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className="font-Inter  ">
+         
+      <body className={inter.className}>
+  
         <Provider store={store}>
         
           <Header />
