@@ -18,7 +18,7 @@ const Donation = () => {
               <div className="h-2 w-2 bg-seconday"></div>
             </div>
             <h1 className="text-xl uppercase font-semibold text-white">
-              become to donat
+              become to donate
             </h1>
           </div>
 
