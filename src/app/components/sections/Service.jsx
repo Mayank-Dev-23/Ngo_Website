@@ -52,7 +52,7 @@ const Service = () => {
                     key={i}
                     className={` ${item.bg} relative flex group sm:flex-row overflow-hidden sm:items-center gap-5 p-4 lg:p-10 flex-col rounded-md md:rounded-full  w-full`}
                   >
-                    <div className="flex flex-col gap-2 absolute bottom-5 right-0 rotate-[212deg]">
+                    <div className="flex flex-col gap-2 absolute bottom-[0.25rem] sm:bottom-5 -right-[6px] sm:right-0 rotate-[212deg]">
                         <div className="h-[6px] w-8 opacity-30 group-hover:opacity-100 transition-all duration-300 ease-in bg-white rounded-full"></div>
                         <div className="h-[6px] w-14  opacity-30 group-hover:opacity-100 transition-all duration-300 ease-in bg-white rounded-full"></div>
                         <div className="h-[6px] w-8  opacity-30 group-hover:opacity-100 transition-all duration-300 ease-in bg-white rounded-full"></div>
