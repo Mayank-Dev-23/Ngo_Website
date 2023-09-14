@@ -59,7 +59,7 @@ const about = () => {
       <div className='grid md:grid-cols-2 xl:grid-cols-4 p-5'>
         {colors.map((color,i)=>{
           return (
-            <div key={i} style={{backgroundColor:color.color}} className=' relative text-white hover:scale-105 group duration-200  transition-transform flex p-10 lg:p-20 flex-col'>
+            <div key={i} style={{backgroundColor:color.color}} className=' relative text-white hover:scale-105  z-20 group duration-200  transition-transform flex p-10 lg:p-20 flex-col'>
           <div className='absolute inset-0 opacity-0 group-hover:opacity-25'>
             <Image src="/child.jpg" fill objectFit='cover' alt="child" objectPosition='center' />
           </div>

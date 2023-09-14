@@ -14,7 +14,7 @@ const Donation = () => {
           {/* Head  */}
           <div className="flex items-center space-x-2">
             <div className="flex flex-col space-y-1 items-center">
-              <div className="h-2 w-2 bg-[#2a6b75]"></div>
+              <div className="h-2 w-2 bg-[#FFFFFF]"></div>
               <div className="h-2 w-2 bg-seconday"></div>
             </div>
             <h1 className="text-xl uppercase font-semibold text-white">
