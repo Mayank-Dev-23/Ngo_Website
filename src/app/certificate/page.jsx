@@ -1,9 +1,10 @@
 'use client';
 import React from "react";
+import Certificatetemplate from "../components/CertificateTemplate";
 
 
 // import dayjs from "dayjs";
-import Certificatetemplate from "../components/CertificateTemplate";
+
 
 
 
