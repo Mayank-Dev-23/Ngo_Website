@@ -39,7 +39,7 @@ const Donation = () => {
           <button
               onMouseEnter={() => setChange(true)}
               onMouseLeave={() => setChange(false)}
-              className="uppercase   relative  bg-seconday border border-seconday overflow-hidden group p-4 px-6 font-bold flex items-center gap-4 hover:text-seconday text-white tracking-wide"
+              className="uppercase  z-20  relative  bg-seconday border border-seconday overflow-hidden group p-4 px-6 font-bold flex items-center gap-4 hover:text-seconday text-white tracking-wide"
             >
               <p className="z-50 uppercase">About more</p>
               <div className="h-7 w-full bg-white absolute  z-20  -translate-x-[100%] group-hover:-translate-x-0 transition-all duration-300 ease-in inset-0"></div>
