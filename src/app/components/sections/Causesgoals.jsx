@@ -5,6 +5,7 @@ import Image from "next/image";
 import React, { useState } from "react";
 import "swiper/css";
 import { Swiper, SwiperSlide } from "swiper/react";
+import ImagePopupModal from "../ImagePopupModal";
 
 const swiperParams = {
   slidesPerView: 1, // Show one card on mobile devices
@@ -24,10 +25,12 @@ const swiperParams = {
 };
 
 const Causesgoals = () => {
+  
 
     const colors=[ "red","blue","green","yellow","orange","green"]
 
     const [change,setChange] =useState(false);
+    const [popup,Setpopup] = useState(false);
   return (
     <div className="w-full mt-20 relative  ">
       <div className="flex flex-col items-center  w-full">
@@ -47,18 +50,29 @@ const Causesgoals = () => {
 
       {/* slider  */}
 
-      <div className="mt-10 max-w-6xl mx-auto p-4  relative">
+      
+
+      <div className="mt-10 max-w-6xl mx-auto p-4  ">
+
         <Swiper {...swiperParams}>
           {colors
             .map((color,i) => {
               return (
                 <SwiperSlide key={i}>
+                
+ 
+                  
                   <div className="group  h-auto">
+                   <ImagePopupModal show={popup} closeModal={() => Setpopup(false)} />
+                    
+                   
+
                     <div className="h-auto w-full grid grid-rows-1  transition-all ease-in duration-500 border ">
                       <div className="row-span-1 group-hover:bg-[#2a6b75] border border-gray-300   group-hover:border-[#2a6b75] bg-white flex flex-col p-2 transition-all duration-300 ease-in">
                         <div className="h-64 w-full relative">
                           <Image src="/gools.jpg" fill objectFit="cover" alt="gools" />
                           <div
+                          onClick={() => Setpopup(true)}
                           onMouseEnter={()=>setChange(true)}
                           onMouseLeave={()=>setChange(false)}
                           className="bg-white scale-50 opacity-0 group-hover:scale-100 group-hover:opacity-100 p-1 hover:bg-[#2a6b75] cursor-pointer absolute bottom-4 left-4 transition-transform ease-in duration-200">
