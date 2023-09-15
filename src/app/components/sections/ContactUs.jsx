@@ -57,8 +57,8 @@ const ContactUs = () => {
           </div>
         </div>
       </div>
-      <div className="h-56 w-full -bottom-24 bg-white relative p-10 xl:absolute max-w-6xl left-[50%] -translate-x-[50%]  rounded-full">
-        <div className="grid lg:grid-cols-3 gap-10 w-full h-full rounded-full">
+      <div className="h-56 w-full -bottom-24 lg:shadow-sm bg-white relative md:mb-[30rem] lg:mb-0 p-10 xl:absolute max-w-6xl left-[50%] -translate-x-[50%]  rounded-full">
+        <div className="grid lg:grid-cols-3  gap-10 w-full h-full rounded-full">
           {contact.map((data, i) => {
             return (
               <div
